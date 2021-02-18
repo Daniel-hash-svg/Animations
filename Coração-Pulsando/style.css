@@ -1,0 +1,57 @@
+body{
+    background-color: #262626;
+}
+p:nth-of-type(1){
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    margin-top: 20px;
+    text-align: center;
+}
+p:nth-of-type(2){
+    color: white;
+    
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.heart{
+    width: 200px;
+    height: 200px;
+    background-color:red;
+    margin-top: 130px;
+    margin-left: 530px;
+    transform: rotate(45deg);
+    animation: pulsing 1.0s linear infinite;
+}
+.heart::before{
+content: '';
+width: 200px;
+height: 200px;
+background-color:red;
+position: absolute;
+border-radius: 50%;
+margin-top: -100px;
+}
+.heart::after{
+content: '';
+width: 200px;
+height: 200px;
+background-color:red;
+position: absolute;
+border-radius: 50%;
+margin-left: -100px;
+}
+@keyframes pulsing{
+    0%{
+        transform: rotate(45deg) scale(1.0);
+    }
+    
+    50%{
+        transform: rotate(45deg) scale(1.1);
+    }
+    
+    100%{
+        transform: rotate(45deg) scale(1.3);
+    }
+}
