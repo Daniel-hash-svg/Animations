@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(168, 244, 247);
+
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 250px;
+font-family: 'Press Start 2P', cursive; /*o próprio link do google fonts diz pra gente escrever desse jeito */
+}
+span::after{ /*Pelo que entendi, aqui pode ser tanto after quando before que dá certo. */
+    content: ''; 
+    animation: alternation 5s infinite;
+}
+@keyframes alternation{
+    0%{content: '🇧🇷';}
+    25%{content: '🎃';}
+    50%{content: '🎅';}
+    75%{content: '🏀';}
+    100%{content: '🍔';}
+}
