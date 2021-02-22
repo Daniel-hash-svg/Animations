@@ -1,0 +1,26 @@
+.center{
+ margin-top: 150px;
+ margin-left: 480px;
+}
+.Circle-static{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px rgb(61, 56, 56);
+    text-align: center;
+    line-height: 300px;
+    font-size: 30px;
+}
+
+.Moving-circle{
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 4px 0px black;
+  border-radius: 50%;
+ margin-top: -300px;
+ animation: spinning 1s linear infinite;
+}
+@keyframes spinning{
+    0%{transform: rotate(0deg);}
+   100%{transform: rotate(360deg);} 
+}
